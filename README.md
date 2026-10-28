@@ -48,3 +48,24 @@ Se habilitaron únicamente **Create Document From Text** y **Create Detailed Eve
 ## Notas de configuración
 
 Las decisiones de configuración y los problemas resueltos se describen en [notes.md](notes.md). No se incluyen archivos de configuración del servidor, tokens ni claves API.
+
+## Comprobación contra la rúbrica
+
+| Criterio | Evidencia |
+| --- | --- |
+| Telegram creado y conectado a OpenClaw | `01-telegram-conectado.png`: Telegram ON / OK; conversación real en `04` y `05` |
+| MCP agregado y activo en el agente | `02-zapier-mcp-conectado.jpg`: OpenClaw Connected |
+| Google Docs crea un documento | `03`, `06` y `08`: herramienta, documento y Success |
+| Google Calendar reserva tiempo para revisar el documento | `05`, `07` y `08`: confirmación, fecha/hora e historial |
+| Confirmación por Telegram | `05-telegram-confirmacion.jpg` |
+| Preguntas ante información insuficiente | `04-telegram-solicitud-y-aclaraciones.jpg` |
+| Secuencia completa de la prueba | `04`, `05` y [transcripción anonimizada](conversacion.md), que incluye los parámetros enviados |
+| Sin credenciales ni datos personales en la entrega | Capturas revisadas; token de Telegram visible solo como fragmento enmascarado por OpenClaw |
+| Notas breves | `notes.md`, 10 líneas |
+| Entrega por GitHub | Repositorio `openclaw-connection` con capturas y notas en su carpeta raíz |
+
+### Conexión inicial de Telegram en OpenClaw
+
+![Telegram ON y OK en OpenClaw](01-telegram-conectado.png)
+
+El mensaje de parámetros del chat contiene la dirección de la cuenta de prueba; se documenta íntegramente con ese dato anonimizado en `conversacion.md`. Las capturas no reproducen el correo.
